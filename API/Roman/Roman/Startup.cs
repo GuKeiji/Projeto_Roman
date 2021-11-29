@@ -46,7 +46,7 @@ namespace Roman
                       ValidateIssuer = true,
                       ValidateAudience = true,
                       ValidateLifetime = true,
-                      IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("Ro-Chave")),
+                      IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("projeto_romano_key")),
                       ClockSkew = TimeSpan.FromMinutes(30),
                       ValidIssuer = "Ro.webAPI",
                       ValidAudience = "Ro.webAPI"

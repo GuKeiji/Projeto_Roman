@@ -42,7 +42,7 @@ namespace Roman.Controllers
                     new Claim(ClaimTypes.Role, usuarioBuscado.IdTipoUsuario.ToString()),
                 };
 
-                var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("Ro-Chave"));
+                var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("projeto_romano_key"));
 
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
