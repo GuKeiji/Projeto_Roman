@@ -12,7 +12,7 @@ namespace Roman.Controllers
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class ProjetosController : ControllerBase
     {
         private IProjetoRepository _ProjetoRepository { get; set; }
