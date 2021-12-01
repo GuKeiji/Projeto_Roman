@@ -116,9 +116,46 @@ const styles = StyleSheet.create({
     },
 
     lista: {
-        height: '15%',
+        flex: 3,
         width: '65%',
+        justifyContent: 'center',
+        paddingTop: 45,
+        // paddingBottom: 100,
+        // backgroundColor: 'purple',
+    },
 
+    container_lista: {
+        height: '49.5%',
+        backgroundColor: '#f1f1f1',
+        borderRadius: 10,
+        paddingLeft: 5,
+    },
+
+    container_nomes: {
+        alignContent: 'space-between',
+        // backgroundColor: '#ff00ff',
+        // width: '100%',s
+        height: '40%',
+    },
+
+    nome: {
+        // backgroundColor: 'yellow',
+        fontSize: 22,
+        fontWeight: 'bold',
+        color: '#00ff00',
+        // width: '25%',
+        
+    },
+
+    nome_tema: {
+        // backgroundColor: 'blue',
+        // width: '30%',
+        fontWeight: 'bold',
+    },
+
+    descricao: {
+        width: '60%',
+        // backgroundColor: 'yellow',
     }
 
 });
