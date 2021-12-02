@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { FlatList, Image, StyleSheet, Text, View } from 'react-native';
+import { FlatList, Image, StyleSheet, Text, View, ScrollView } from 'react-native';
 
 import api from '../services/api';
 
@@ -29,20 +29,20 @@ export default class Projetos extends Component {
 
     render() {
         return (
-            <View style={styles.main}>
-                <View style={styles.organizar_titulo}>
-                    <Text style={styles.titulo}>
-                        Projetos
-                    </Text>
-                    <View style={styles.linha}></View>
+                <View style={styles.main}>
+                    <View style={styles.organizar_titulo}>
+                        <Text style={styles.titulo}>
+                            Projetos
+                        </Text>
+                        <View style={styles.linha}></View>
+                    </View>
+                    <FlatList
+                        contentContainerStyle={styles.lista}
+                        data={this.state.Lista}
+                        keyExtractor={item => item.idProjeto}
+                        renderItem={this.renderItem}
+                    />
                 </View>
-                <FlatList
-                    contentContainerStyle={styles.lista}
-                    data={this.state.Lista}
-                    keyExtractor={item => item.idProjeto}
-                    renderItem={this.renderItem}
-                />
-            </View>
         )
     }
 
@@ -116,10 +116,10 @@ const styles = StyleSheet.create({
     },
 
     lista: {
-        flex: 3,
+        // flex: 3,
         width: '65%',
         justifyContent: 'center',
-        paddingTop: 45,
+        paddingTop: 350,
         // paddingBottom: 100,
         // backgroundColor: 'purple',
     },
@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
         alignContent: 'space-between',
         // backgroundColor: '#ff00ff',
         // width: '100%',s
-        height: '40%',
+        // height: '40%',
     },
 
     nome: {
@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#00ff00',
         // width: '25%',
-        
+
     },
 
     nome_tema: {

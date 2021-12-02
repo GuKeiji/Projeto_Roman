@@ -11,7 +11,7 @@ namespace Roman.Controllers
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    //[Authorize]@react-native-picker/picker
     public class TemasController : ControllerBase
     {
         private ITemaRepository _TemaRepository { get; set; }

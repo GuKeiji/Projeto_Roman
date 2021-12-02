@@ -24,7 +24,7 @@ export default function Stack() {
       <AuthStack.Navigator
         initialRouteName="Login"
         screenOptions={{
-          headerShown: true,
+          headerShown: false,
         }}>
         <AuthStack.Screen name="Login" component={Login} />
         <AuthStack.Screen name="Projetos" component={Projetos} />
